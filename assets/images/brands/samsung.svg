@@ -1,0 +1,6 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="white"/>
+  <circle cx="150" cy="150" r="100" fill="#1428a0"/>
+  <text x="150" y="180" font-family="Arial" font-size="100" text-anchor="middle" fill="white">S</text>
+  <text x="150" y="240" font-family="Arial" font-size="30" text-anchor="middle" fill="#1428a0">samsung</text>
+</svg>

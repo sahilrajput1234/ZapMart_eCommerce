@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>headphones Image</title>
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        img { max-width: 800px; max-height: 800px; }
+    </style>
+</head>
+<body>
+    <img src="headphones.svg" alt="headphones" id="productImage">
+    <script>
+        // Auto download as PNG
+        const canvas = document.createElement('canvas');
+        const img = document.getElementById('productImage');
+        img.onload = function() {
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            
+            // Convert canvas to PNG
+            const pngUrl = canvas.toDataURL('image/png');
+            
+            // Create a link to download
+            const a = document.createElement('a');
+            a.download = 'headphones.png';
+            a.href = pngUrl;
+            a.click();
+        };
+    </script>
+</body>
+</html>
